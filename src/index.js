@@ -20,7 +20,7 @@ export default {
       const proxyServer = new ProxyServer({
         type: 'http',
         port,
-        hostname: 'localhost',
+        hostname,
         rule: getRule(this),
         autoTrust: true,
       });
